@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -20,10 +21,9 @@ body {
 .container {
     max-width: 50%;
     margin: auto;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
     padding-bottom: 11.5rem;
-    padding-left: 1.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
 .navigation {
@@ -66,18 +66,28 @@ body {
     padding: 0.5rem 1rem;
 }
 
-.container > h1 {
-    padding-top: 1.5rem;
+.header {
+    max-width: 50%;
+    margin: auto;
+    padding-left: 5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding-left: 10rem;
 }
 
-#result {
-    font-size: 1.3rem;
-    padding-left: 14rem;
+.result {
+    margin-left: 10rem;
 }
 
-button {
+#submit-answer-btn {
+    margin-top: 2rem;
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     color: white;
+    margin-bottom: 0.5rem;
 }
 
+#output {
+    font-size: 1.2rem;
+    margin-left: 10rem;
+}

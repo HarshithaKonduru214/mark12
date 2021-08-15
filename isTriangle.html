@@ -8,34 +8,59 @@
     <link rel="stylesheet" href="isTriangle.css">
 </head>
 <body>
-    <h1>Is It A Triangle?</h1>
-    <label for="selection">Do you want to enter angles or sides?</label>
-    <select name="select" id="select">
-        <option value="angles">Enter Angles</option>
-        <option value="sides">Enter Sides</option>
-    </select>
-    <button id="next">Next</button>
-    <div class="angle-container">
-        <label for="angle-1">Enter First Angle:</label>
-        <input type="number" id="angle-one">
-        <label for="angle-2">Enter Second Angle:</label>
-        <input type="number" id="angle-two">
-        <label for="angle-3">Enter Third Angle:</label>
-        <input type="number" id="angle-three">
-        <button id="check-button1">Check</button>
+    <nav class="navigation">
+        <div class="nav-brand">TRIANGLES</div>
+        <ul class="nav-list non-bullet">
+            <li class="list-inline">
+                <a href="isTriangle.html" class="link link-active">Is It A Triangle</a>
+            </li>
+            <li class="list-inline">
+                <a href="area.html" class="link">Find Area</a>
+            </li>
+            <li class="list-inline">
+                <a href="quiz.html" class="link">Quiz</a>
+            </li>
+            <li class="list-inline">
+                <a href="hypotenuse.html" class="link">Find Hypotenuse</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1><center>Is It A Triangle?</center></h1>
+        <div class="selection-container">
+            <label for="selection">Do you want to enter angles or sides?</label>
+            <select name="select" id="select">
+                <option value="angles">Enter Angles</option>
+                <option value="sides">Enter Sides</option>
+            </select>
+            <button id="next">Next</button>
+            <div class="angle-container">
+                <label for="angle-1">Enter First Angle:</label>
+                <input type="number" id="angle-one">
+                <label for="angle-2">Enter Second Angle:</label>
+                <input type="number" id="angle-two">
+                <label for="angle-3">Enter Third Angle:</label>
+                <input type="number" id="angle-three">
+                <button id="check-button1">Check</button>
+            </div>
+            <div class="sides-container">
+                <label for="side-1">Enter First Side:</label>
+                <input type="number" id="side-one">
+                <label for="side-2">Enter Second Side:</label>
+                <input type="number" id="side-two">
+                <label for="side-3">Enter Third Side:</label>
+                <input type="number" id="side-three">
+                <button id="check-button2">Check</button>
+            </div>
+
+        </div>
+        
+        <div class="result">
+            <p id="output"></p>
+        </div>
+
     </div>
-    <div class="sides-container">
-        <label for="side-1">Enter First Side:</label>
-        <input type="number" id="side-one">
-        <label for="side-2">Enter Second Side:</label>
-        <input type="number" id="side-two">
-        <label for="side-3">Enter Third Side:</label>
-        <input type="number" id="side-three">
-        <button id="check-button2">Check</button>
-    </div>
-    <div class="result">
-        <p id="output"></p>
-    </div>
+    
     <script src="isTriangle.js"></script>
 </body>
 </html>

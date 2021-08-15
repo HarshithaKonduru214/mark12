@@ -47,7 +47,7 @@ function isTriangle() {
 function computeArea() {
     if(selectValue.value === 'two-sides') {
         let area = Number(base.value) * Number(height.value) * 0.5;
-        result.innerText = `The are is ${area}.`;
+        result.innerText = `The area is ${area}.`;
         result.style.display = 'flex';
     } else if (selectValue.value === 'three-sides') {
         if(isTriangle()) {

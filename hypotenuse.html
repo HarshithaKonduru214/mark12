@@ -8,13 +8,33 @@
     <link rel="stylesheet" href="hypotenuse.css">
 </head>
 <body>
-    <h1>Find the Hypotenuse!</h1>
-    <label for="base">Base:</label>
-    <input type="number" id="base">
-    <label for="height">Height:</label>
-    <input type="number" id="height">
-    <button id="calculate">Calculate</button>
-    <p id="result"></p>
+    <nav class="navigation">
+        <div class="nav-brand">TRIANGLES</div>
+        <ul class="nav-list non-bullet">
+            <li class="list-inline">
+                <a href="isTriangle.html" class="link link-active">Is It A Triangle</a>
+            </li>
+            <li class="list-inline">
+                <a href="area.html" class="link">Find Area</a>
+            </li>
+            <li class="list-inline">
+                <a href="quiz.html" class="link">Quiz</a>
+            </li>
+            <li class="list-inline">
+                <a href="hypotenuse.html" class="link">Find Hypotenuse</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1><center>Find the Hypotenuse!</center></h1>
+        <label for="base">Base:</label>
+        <input type="number" id="base">
+        <label for="height">Height:</label>
+        <input type="number" id="height">
+        <button id="calculate">Calculate</button>
+        <p id="result"></p>
+    </div>
+    
     <script src="hypotenuse.js"></script>
     
 </body>
